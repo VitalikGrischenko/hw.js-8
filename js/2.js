@@ -1,8 +1,11 @@
 // Порахуйте суму чисел від 12 до 27
 
 
-let numder = 12;
-for (let i = numder; numder <= 27; i++) {
-  console.log(numder + i);
-}
-
+let sum = 0;
+for (let i = 12; i <= 27; i += 1) {
+    sum += i;
+    if (i === 27) {
+    console.log(sum);
+    };
+};
+console.log(sum);

@@ -1,7 +1,9 @@
-let number = 3;
-for (let i = number; number <= 9; i++) {
-  if (number % 2 !== 0) {
-    number * i;
-  }
+let amount = 1;
+for (let i = 3; i <= 9; i += 1) {
+  if (i % 2 !== 0) {
+    amount *= i;
+    console.log(amount);
+  } else {
+    console.log(`число ${i} парне`);
+  };
 }
-console.log(number);
