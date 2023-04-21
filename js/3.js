@@ -6,4 +6,4 @@ for (let i = 3; i <= 9; i += 1) {
   } else {
     console.log(`число ${i} парне`);
   };
-}
+};
