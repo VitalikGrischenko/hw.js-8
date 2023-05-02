@@ -1,9 +1,9 @@
-const goods = 10;
-let totalPrice = 0;
-
-for (let i = totalPrice; i < goods; i++) {
-  const price = Math.floor(Math.random() * 4501) + 500; 
-  totalPrice += price;
+let price = 0;
+let pric = 0;
+const good = 8;
+for (let i = 1; i <= good; i += 1) {
+  pric = Math.round(Math.random() * (5000 - 500) + 500);
+  console.log(`The price for ${i} item is ${pric}`);
+  price += pric;
 }
-
-console.log("Загальна вартість покупки: " + totalPrice);
+console.log(`The total price is ${price}`);

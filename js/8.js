@@ -3,19 +3,25 @@
 
 
 
-let grades = [];
-let average = 0;
+let grade = [];
+let grade2 = 0;
+let grade3 = 0;
 
-for (let i = 1; ; i++) {
-  let grade = prompt("Введіть оцінку " + i + ":");
-  if (grade === null || grade === "") {
-    break;
-  } else {
-    grades.push(parseFloat(grade));
-    average = grades.reduce((a, b) => a + b) / grades.length; 
-    console.log("Середній бал успішності: " + average.toFixed(2)); 
-    if (average < 7) { 
-      break;
-    }
-  }
+for (let i = 1; i <= 10; i += 1) {
+  const grade = Number(Math.round(Math.random() * (12 - 1) + 1));
+  marks.push(grade);
+  grade3 += grade;
+  const gradesLenght = grades.length;
+  grade2 = Number(Math.round(grade3 / gradesLenght));
+}
+
+console.log(grades);
+console.log(grade2);
+
+if (grade2 <= 7) {
+  console.log(
+    `You have got quite bad average mark - ${grade2}, so it is better to not hear it`
+  );
+} else {
+  console.log(`Ur parents are proud with you! ${grade2}`);
 }
